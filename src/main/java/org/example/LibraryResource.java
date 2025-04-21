@@ -32,7 +32,7 @@ public class LibraryResource {
     @GET
     @Path("/books")
     public  List<Book> allBooks() {
-        return library.allBooks(_Book.title.ascIgnoreCase());
+        return library.allBooks();
     }
 
     @POST

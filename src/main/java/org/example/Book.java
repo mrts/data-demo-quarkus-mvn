@@ -8,6 +8,7 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotNull;
 import org.hibernate.annotations.NaturalId;
+import org.hibernate.envers.Audited;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -16,6 +17,7 @@ import java.util.Set;
 
 import static jakarta.persistence.EnumType.STRING;
 
+@Audited
 @Entity
 public class Book {
     @Id
